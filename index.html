@@ -11,11 +11,11 @@
 </head>
 
 <body class="bg-secondary">
-    <div class="container p-5 d-xl-flex">
+    <div class="container p-3 d-xl-flex">
         
-            <div class="container-fluid bg-dark rounded my-3">
+            <div class="container-fluid bg-dark border border-primary rounded my-3 d-flex flex-column justify-content-around">
                 <h2 class="display-5 fw-bold text-light ">About me</h2>
-                <p class="col-md-8 fs-4 text-light">
+                <p class="col-md-10 fs-4 text-light">
                     I am a professional graphic designer, this is my main strength and where I have accumulated the most
                     experience. <br>
                     Currently I feel challenged to venture into the world of programming and therefore I have been
@@ -23,12 +23,14 @@
                     Currently found myself studying and training
                     while continuing to perform at my job. <br>
                 </p>
-                <button class="btn  btn-secondary text-light btn-lg my-3" data-bs-toggle="modal"
+                <div>
+                <button class="btn  btn-secondary btn-outline-primary text-light btn-lg my-3" data-bs-toggle="modal"
                     data-bs-target="#PopUp">Not
                     enough?</button>
+                </div>
                 <div class="modal fade " data-bs-backdrop="static" id="PopUp">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
+                        <div class="modal-content border border-warning">
                             <div class="modal-header">
                                 <h4>A little of my present</h4>
                             </div>
@@ -50,15 +52,15 @@
                 </div>
             </div>
         <div>   
-            <div class="card m-xl-3 card-fluid">
+            <div class="card m-xl-3 border border-primary-subtle card-fluid">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="Foto 1.png" class="img-fluid rounded-start" alt="...">
+                        <img src="Foto 1.png" class="img-fluid " alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h3 class="card-title fw-bold">Gabriel Roatta</h3>
-                            <h5 class="fs-5">Graphic designer & Front-end developer (UX-UI)</h5>
+                            <h5 class="fs-5 text-primary">Graphic designer & Front-end developer (UX-UI)</h5>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Fully proficient in graphic design with extensive knowledge
                                     of
@@ -74,16 +76,15 @@
                 </div>
             </div>
             <form class="my-3 rounded ">
-                <div class="d-lg-flex d-xl-default">
+                <div class="d-lg-flex flex-xl-column flex-xxl-row">
                     <div class="container-fluid">
                         <div class="col-md-10 m-3">
                             <label for="name" class="form-label">Contact me...</label>
-                            <input type="text" id="name" class="form-control" placeholder="Name">
+                            <input type="text" id="name" class="form-control" placeholder="Your name">
                         </div>
     
-                        <div class="col-md-10 m-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" value="email@example.com">
+                        <div class="col-md-10 m-3 pt-4">
+                            <input type="email" class="form-control" placeholder="email@example.com">
                         </div>
                     </div>
     
@@ -95,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="conteiner d-flex justify-content-center">
+                <div class="container d-flex justify-content-center">
                     <button type="submit"
                         class="btn  btn-secondary btn-outline-dark text-light  my-3 col-sm-2">Send</button>
                 </div>
